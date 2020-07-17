@@ -6,30 +6,34 @@ var pc1 = 0;
 var pc2 = 0;
 
 function fun(i) {
-  if (player==0) {
-    if (i.innerHTML == "X" || i.innerHTML == "O") {
-      player = 0;
+  if (win == 0) {
+    if (player==0) {
+      if (i.innerHTML == "X" || i.innerHTML == "O") {
+        player = 0;
+      }
+      else {
+        i.innerHTML = "X";
+        count += 1;
+        player = 1;
+        countCheeck();
+     }
     }
-    else {
-      i.innerHTML = "X";
-      count += 1;
-      player = 1;
-      countCheeck();
-   }
-  }
 
+    else {
+      if (i.innerHTML == "X" || i.innerHTML == "O") {
+        player = 1;
+      }
+      else {
+        i.innerHTML = "O";
+        player = 0;
+        count += 1;
+        countCheeck();
+      }
+    }
+  }
   else {
-    if (i.innerHTML == "X" || i.innerHTML == "O") {
-      player = 1;
-    }
-    else {
-      i.innerHTML = "O";
-      player = 0;
-      count += 1;
-      countCheeck();
-    }
+    //Do nothing..
   }
-
 }
 
 function clr() {
@@ -174,7 +178,7 @@ function countCheeck() {
   if (count == 9) {
     cheeck();
     if (win == 0) {
-      alert("Game over...");
+      document.querySelector(".won").innerHTML = "Game Over..!";
     }
   }
 
