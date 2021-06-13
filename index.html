@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199011079-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-199011079-1');
+    </script>
+
+
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic-Tac-Toe | By EDWARD</title>
+    <meta name="description" content="Tic-tac-toe, noughts and crosses, or Xs and Os/“X’y O’sies”, is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner.">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="nav">
+            # Tic - Tac - Toe #
+        </div>
+        <div class="board">
+            <div class="inner-board-container">
+                <div class="inner-board">
+                    <div class="g1 chk box1 box2" onclick="fun(this)"> </div>
+                    <div class="g2 chk box1 box2" onclick="fun(this)"> </div>
+                    <div class="g3 chk box1 box2" onclick="fun(this)"> </div>
+                    <div class="g4 chk box1 box2" onclick="fun(this)"> </div>
+                    <div class="g5 chk box1 box2" onclick="fun(this)"> </div>
+                    <div class="g6 chk box1 box2" onclick="fun(this)"> </div>
+                    <div class="g7 chk box1 box2" onclick="fun(this)"> </div>
+                    <div class="g8 chk box1 box2" onclick="fun(this)"> </div>
+                    <div class="g9 chk box1 box2" onclick="fun(this)"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="score">
+            <div class="inner-score-container">
+                <div class="inner-score">
+                    <div class="won"></div>
+                    <div class="counter">
+                        <div class="pl1-c1">
+                            <div class="pl1">Player 1</div>
+                            <div class="count1">0</div>
+                        </div>
+                        <div class="pl2-c2">
+                            <div class="pl2">Player 2</div>
+                            <div class="count2">0</div>
+                        </div>
+                    </div>
+
+
+                    <div class="clr-reset">
+                        <button type="button" class="clear" onclick="clr()">Clear Board</button>
+                        <button type="button" class="reset" onclick="reset()"> Reset All </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                Made with <i class="material-icons" style="color: red; position: relative; top: 0.3em; font-size: 1.3em;">favorite</i> by <u>EDWARD</u>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+</html>
