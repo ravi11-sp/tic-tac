@@ -165,6 +165,7 @@ p {
         padding: 0;
     }
     .nav {
+        width: 100vw;
         height: 10vh;
         font-size: 1rem;
         font-weight: bolder;
@@ -277,7 +278,7 @@ p {
         position: absolute;
         width: 100vw;
         height: 8vh;
-        bottom: 0;
+        top: 92vh;
         margin: 0;
         padding: 0;
         font-size: 1rem;
