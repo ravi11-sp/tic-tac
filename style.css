@@ -122,7 +122,6 @@ p {
 .reset {
     font-size: 1.3rem;
     border-radius: 0.15rem;
-    /* background-color: rgb(253, 234, 234); */
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -149,7 +148,6 @@ p {
     grid-area: footer;
     display: grid;
     place-items: center;
-    /* font-size: 1.1rem; */
 }
 
 @media screen and (max-width: 550px) {
@@ -168,6 +166,8 @@ p {
     }
     .nav {
         height: 10vh;
+        font-size: 1rem;
+        font-weight: bolder;
     }
     .counter {
         position: absolute;
@@ -210,7 +210,6 @@ p {
     }
     .inner-board-container {
         position: absolute;
-        /* background-color: #f8e8e8; */
         background-color: #fcf0f0;
         height: 65vh;
         width: 100vw;
@@ -242,6 +241,16 @@ p {
         border-radius: 10px;
         background-color: rgb(250, 240, 240);
     }
+    .clear,
+    .reset,
+    .count1,
+    .count2,
+    .pl1,
+    .pl2 {
+        /* font-size: 16px; */
+        font-size: 1rem;
+        font-weight: bold;
+    }
     .won-pop {
         position: absolute;
         display: flex;
@@ -271,9 +280,25 @@ p {
         bottom: 0;
         margin: 0;
         padding: 0;
+        font-size: 1rem;
     }
     .box1 {
         border-radius: 6px;
         background-color: rgb(255, 249, 249);
+    }
+    .won {
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        width: 90vw;
+        height: 50vh;
+    }
+    .inner-score,
+    .inner-score-container {
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        top: 0;
     }
 }
