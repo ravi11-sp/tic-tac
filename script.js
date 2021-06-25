@@ -4,6 +4,24 @@ var win = 0;
 var pc1 = 0;
 var pc2 = 0;
 
+let stack = [];
+
+function backOne() {
+    if (count < 9) {
+        if (stack.length > 0) {
+            let v = '.' + stack.pop();
+            document.querySelector(v).innerHTML = '';
+            count = count - 1;
+            if (player == 0) {
+                player = 1;
+            } else {
+                player = 0;
+            }
+        }
+    }
+
+}
+
 function fun(i) {
     if (win == 0) {
         if (player == 0) {
@@ -13,6 +31,8 @@ function fun(i) {
                 i.innerHTML = "X";
                 count += 1;
                 player = 1;
+                stack.push(i.classList[0]);
+
                 countCheeck();
             }
         } else {
@@ -22,6 +42,9 @@ function fun(i) {
                 i.innerHTML = "O";
                 player = 0;
                 count += 1;
+
+                stack.push(i.classList[0]);
+
                 countCheeck();
             }
         }
@@ -45,6 +68,7 @@ function clr() {
     win = 0;
     document.querySelector(".won").innerHTML = "";
     popUpRemove();
+    stack = [];
 }
 
 function reset() {
